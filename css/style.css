@@ -1,0 +1,244 @@
+/* html{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{    
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient( #85FFBD 5%, #FFFB7D 100%);
+}
+header{
+    border: 0;
+    width: 100%;
+    padding-top: 0px;
+
+} */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient( #85FFBD 5%, #FFFB7D 100%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    
+}
+.nav-bar{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-logo{
+    max-width: 10px;
+
+}
+.nav-logo2{
+    width: 50px;
+    height: 50px;
+
+}
+.nav-list{
+    margin-top: 30px;
+    
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+  
+    display: flex;
+    margin-left: 30px;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    background: linear-gradient(360deg, #85FFBD 5%, #FFFB7D 100%);
+    margin-left: 10px;
+    border-radius: 20px;
+    background-image: url('/img/Bolo-de-Milho-Verde-Cremoso-de-Liquidificador.jpg');
+    position: relative;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    overflow: hidden;
+}
+.card:hover .card__inner{
+    opacity: 1;
+}
+.card1{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    background: linear-gradient(360deg, #85FFBD 5%, #FFFB7D 100%);
+    margin-left: 10px;
+    border-radius: 20px;
+    background-image: url('/img/Maçã-do-Amor-Tradicional.jpg');
+    position: relative;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    overflow: hidden;
+}
+.card1:hover .card__inner{
+    opacity: 1;
+}
+
+.card__inner{
+    background: linear-gradient(360deg, #85FFBD 5%, #FFFB7D 100%);
+    color:#222220;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    padding: 2rem 1.3rem 2rem 2rem;
+    transition: all 0.4s ease 0s;
+}
+.card__inner p {
+    /* overflow: scroll; */
+    height: 87%;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+}
+.card__inner table tr td{
+
+    border: 1px solid black;
+    max-width: 110px;
+    margin-left: 100px;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 36px 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+.imagen1{
+    padding: 10px;
+    width: 380px;
+    height: 350px;
+}
+form{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+   
+
+}
+.form1{ margin-left: 10%;
+    display: flex;
+    width: 1080px;
+
+    padding: 0 16px;
+}
+.in-st{
+    margin-left: 20px;
+}
+button{
+    margin-left: 20px;
+    position: relative;
+    background: none;
+    border: 0;
+    transition: .4s ease;
+    font-size: 16;
+    font-weight: bold;
+
+}
+button::after{
+    content: '';
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #85FFBD;
+    border: 1px solid black;
+
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    top: -50%;
+    left: -10px;
+}
+button:hover:after{
+    width: calc(100% + 20px);
+    opacity: 0.6;
+    border-radius: 30%;
+
+    
+}
+.table-s{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 36px;
+    display: flex;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
